@@ -7,4 +7,7 @@ include_directories(.)
 
 add_executable(Project_2___Group_123
         Trie.cpp
-        Trie.h)
+        Trie.h
+        main.cpp
+        HashMap.cpp
+        HashMap.h)
