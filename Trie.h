@@ -5,7 +5,6 @@
 #ifndef PROJECT_2_GROUP_123_TRIE_H
 #define PROJECT_2_GROUP_123_TRIE_H
 
-#endif //PROJECT_2_GROUP_123_TRIE_H
 
 #include <vector>
 #include <string>
@@ -30,3 +29,5 @@ public:
     std::vector<Song> search(std::string word);
     //void collect(TrieNode* node, std::vector<Song>& all_songs);
 };
+
+#endif //PROJECT_2_GROUP_123_TRIE_H

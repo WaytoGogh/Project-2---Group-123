@@ -5,7 +5,10 @@
 #ifndef PROJECT_2___GROUP_123_HASHMAP_H
 #define PROJECT_2___GROUP_123_HASHMAP_H
 
-
+#include <unordered_map>
+#include <string>
+#include <vector>
+#include "Trie.h"
 
 
 class HashMap {

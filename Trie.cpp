@@ -23,14 +23,7 @@ void Trie::buildTrie(std::string genre, Song song) {
     current->endOfWord = true;
     current->songs.push_back(song);
 }
-/*void Trie::collect(TrieNode* node, std::vector<Song>& all_songs) {
-    all_songs.insert(all_songs.end(),node->songs.begin(),node->songs.end());
-    for (int i = 0; i < 128; i++) {
-        if (node->children[i] != nullptr) {
-            collect(node->children[i], all_songs);
-        }
-    }
-}*/
+
 std::vector<Song> Trie::search(std::string word) {
     TrieNode* current = root;
     for (char cur: word) {
@@ -39,7 +32,5 @@ std::vector<Song> Trie::search(std::string word) {
         }
         current = current->children[cur];
     }
-    //std::vector<Song> all_songs;
-    //collect(current, all_songs);
     return current->songs;
 }
