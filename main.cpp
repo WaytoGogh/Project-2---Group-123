@@ -172,11 +172,10 @@ int main() {
 
                     <<endl;
             }
-
+            cout << "\nPerformance Comparison:" << endl;
+            cout << "Trie search time: " << t_Duration.count() << " microseconds" << endl;
+            cout << "HashMap search time: " << h_Duration.count() << " microseconds" << endl;
         }
-        cout << "\nPerformance Comparison:" << endl;
-        cout << "Trie search time: " << t_Duration.count() << " microseconds" << endl;
-        cout << "HashMap search time: " << h_Duration.count() << " microseconds" << endl;
     }
     cout << "finished"<<endl;
     return 0;
